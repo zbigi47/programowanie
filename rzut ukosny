@@ -1,0 +1,22 @@
+#include "iostream"
+#define _USE_MATH_DEFINES
+#include "math.h"
+
+
+using namespace std;
+int main()
+{
+	int predkosc, kat;
+	double Kat, sinuskata;
+	const int przyspieszenie = 10;
+	cout << "Podaj predkosc: ";
+	cin >> predkosc;
+	cout << "Podaj kat: ";
+	cin >> kat;
+	Kat = (kat*M_PI) / 180; //przeliczanie stopni na radiany
+	sinuskata = sin(Kat);
+	cout<<"Maksymalna wysokosc lotu to: "<<((pow(predkosc*sinuskata,2))/(2*przyspieszenie))<<" m"<<endl;
+	cout<<"Czas lotu: "<< (2 * predkosc*sinuskata) / przyspieszenie<<" s" <<endl;
+	cin >> predkosc;
+    return 0;
+}
