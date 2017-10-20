@@ -1,4 +1,4 @@
-// zadanie odległości na mapie.cpp : Defines the entry point for the console application.
+// zadanie odległości na mapie.cpp 
 // odległosc miedzy miastami
 #include "iostream"
 #include "math.h"
